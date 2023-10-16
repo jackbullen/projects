@@ -14,6 +14,7 @@
     <header>
         <h1>Book Database with Django Rest Framework</h1>
         <p>Populating data from bookshelf images using advanced image recognition</p>
+        <a href="https://github.com/jackbullen/Quick-Books">GitHub Repo</a>
     </header>
 
     <!-- Main Content Section -->
@@ -21,15 +22,15 @@
 
         <!-- Project Overview -->
         <h2>Overview</h2>
-        <p>The DRF Book Database project leverages the Django Rest Framework (DRF) to create a comprehensive database of books. Rather than manual data entry, this system uses advanced image recognition technology to extract book titles and other relevant information directly from photographs of bookshelves.</p>
-
+        <p>The Book Database project leverages Computer Vision to create a comprehensive database of books. Rather than manual data entry, this system uses OpenCV and Google Cloud endpoints to extract book titles and other relevant information directly from photographs of bookshelves.</p>
         <!-- How it Works Section -->
         <h3>How It Works</h3>
         <ul>
             <li>Users upload images of their bookshelves.</li>
-            <li>Image recognition software scans and identifies book spines, extracting titles, authors, and sometimes even publication years.</li>
-            <li>The extracted data is then processed and stored in the DRF database.</li>
-            <li>Users can search, filter, and manage their book collection online with ease.</li>
+            <li>Image recognition software scans and identifies book spines, extracting titles and authors.</li>
+            <li>The extracted data is then looked up in Google Books.</li>
+            <li>Finally the comprehensive response from Books API is stored in the database.</li>
+            <li>Used Bookstore X can now search, filter, and manage their book catalogue online with ease.</li>
         </ul>
 
         <!-- Potential Applications -->
@@ -45,13 +46,18 @@
         <!-- Screenshots Section -->
         <h2>Screenshots</h2>
         <figure>
-            <img src="drfdata_screenshot1.jpg" alt="DRF Book Database interface">
-            <figcaption>User interface of the DRF Book Database</figcaption>
+            <img src="https://raw.githubusercontent.com/jackbullen/Quick-Books/master/ImageRecognition/shelf_imgs/easy.jpg" alt="DRF Book Database interface">
+            <figcaption>Image of a book shelf before being sliced by OpenCV</figcaption>
         </figure>
 
         <figure>
-            <img src="drfdata_screenshot2.jpg" alt="Bookshelf image being processed">
-            <figcaption>Processing a bookshelf image and populating the database</figcaption>
+            <img src="https://raw.githubusercontent.com/jackbullen/Quick-Books/master/assets/img2.png" alt="Bookshelf image being processed">
+            <figcaption>Database with Books API responses populated</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://raw.githubusercontent.com/jackbullen/Quick-Books/master/assets/img1.png" alt="Bookshelf image being processed">
+            <figcaption>Detailed information about one of the books</figcaption>
         </figure>
 
     </section>

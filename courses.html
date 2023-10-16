@@ -14,6 +14,7 @@
     <header>
         <h1>Course Database</h1>
         <p>Fall 2023 and Spring 2024 UVic course data API deployed to GCP App Engine.</p>
+        <a href="https://github.com/jackbullen/Course-API">GitHub Repo</a>
     </header>
 
     <!-- Main Content Section -->
@@ -21,30 +22,39 @@
 
         <!-- Project Overview -->
         <h2>Overview</h2>
-        <p>This project is about creating a comprehensive database for UVic courses for the Fall 2023 and Spring 2024 semesters. The data is hosted via an API deployed to Google Cloud Platform's App Engine.</p>
-
+        <p>This project is about creating an API endpoint for University of Victoria course data including schedules for class sessions. The data is hosted in Cloud SQL and Django is in App Engine.</p>
         <!-- Key Features Section -->
         <h3>Key Features</h3>
         <ul>
-            <li>Real-time course data</li>
-            <li>Powerful search capabilities</li>
-            <li>Integration with GCP App Engine</li>
+            <li>Detailed query parameters</li>
+            <li>Latitude and longitude of buildings</li>
+            <li>Sections, Courses, Instructors, and their Relations</li>
         </ul>
 
         <!-- Technologies Used Section -->
         <h3>Technologies Used</h3>
-        <p>Google Cloud Platform, App Engine, REST API...</p>
+        <p>GCP: Cloud SQL/Cloud Proxy/App Engine</p>
+        <p>Python: Django with Rest Framework</p>
 
         <!-- Screenshots Section -->
         <h2>Screenshots</h2>
         <figure>
-            <img src="course_screenshot1.jpg" alt="Course Database screenshot 1">
-            <figcaption>Homepage of the Course Database</figcaption>
+            <img src="demos/courses_1.png" alt="Course Database screenshot 1" width="520">
+            <figcaption>Program endpoint on GCP</figcaption>
         </figure>
         
         <figure>
-            <img src="course_screenshot2.jpg" alt="Course Database screenshot 2">
-            <figcaption>Course details view</figcaption>
+            <img src="demos/courses_2.png" alt="Course Database screenshot 2" width="420">
+            <figcaption>Deployed using Digital Ocean Droplet</figcaption>
+        </figure>
+        <p>Explanation of the Django project</p>
+        <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IqDVoV14YSk?si=wFETGHxnqj5uJu5H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </figure>
+        <p>Walk through of the database</p>
+        <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/j_oifXgPGbY?si=oHYs2QIAGGXbMG1q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
         </figure>
     </section>
 
